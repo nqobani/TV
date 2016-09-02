@@ -1,0 +1,58 @@
+.weatherPanel
+{
+	width: 98%;
+	min-height:200px;
+	background: rgba(79,150,250,0.6);
+	padding: 0px 3px 3px 3px; 
+	text-align: center;
+}
+.btnAdd
+{
+	border-radius: 16px;
+	min-height: 25px;
+	padding: 5px;
+	font-family: Castellar;
+	text-align: center;
+	background: rgba(79,150,250,0.5);
+}
+.citySelector
+{
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	min-height: 25px;
+	padding: 5px;
+	font-family: Castellar;
+	text-align: center;
+	background: rgba(79,150,250,0.2);
+}
+.flag
+{
+	widows: 100%;
+}
+.countryNameSpan
+{
+  font-size: 20px;
+  font-family: Imprint MT Shadow;
+}
+.cityNameSpan
+{
+   font-family: Jokerman;
+   font-size: 15px;
+}
+td{
+	width: 50%;
+	border: 1px solid;
+}
+.weatherDetailsTable
+{
+	width: 100%;
+}
+.textBox
+{
+	border-top-left-radius:100px;
+	border-bottom-right-radius: 100px;
+	background:   rgba(20,50,70,0.5);
+	text-align: center;
+	color: #fff;
+	width: 50%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TV APP</title>
+	<link rel="stylesheet" type="text/css" href="style/homeStyle.css">
+	<script type="text/javascript" src="js/angularJS/angular.min.js"></script>
+	<script type="text/javascript" src="js/angularJS/factory/seriesFactory.js"></script>
+	<script type="text/javascript" src="js/angularJS/factory/seriesImgFactory.js"></script>
+	<script type="text/javascript" src="js/angularJS/controllers/seriesController.js"></script>
+</head>
+<body ng-app="traktTvApp" ng-controller="seriesCtrl as sc" ng-init="sc.getPopularSeries()">
+<div class="navDiv">
+	<div class="menus">
+		<div class="menu">Home</div>
+		<div class="menu">Series and Shows</div>
+		<div class="menu">Movie</div>
+		<div class="menu">Services</div>
+		<div class="menu"><a href="theme/index.html">About</a></div>
+	</div>
+	
+</div>
+<div class="bannerDiv">
+	<div class="overVideo">
+		<div class="bannerContent">
+			<span class="bannerText">TV Master.be<br>happy</span>
+		</div>
+	</div>
+<video autoplay mute="muted" repeat="repeat">
+  <source src="2016 New Upcoming Movie Trailers - 14 Official New Movie Trailers.mp4" type="video/mp4">
+  <source src="2016 New Upcoming Movie Trailers - 14 Official New Movie Trailers.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+<div class="welcomingDiv">
+</div>
+<div class="movies" ng-model="sc.movies">
+	<div class="movie" ng-repeat="movie in sc.movies">
+		<img class="moviePost" src="https://image.tmdb.org/t/p/w780{{movie.poster_path}}"/>
+
+		<span class="movieTitle">{{movie.original_title}}</span><br><br>
+		<span><span class="label">Release Date</span><br>{{movie.release_date}}</span><br><br>
+		<span><span class="label">Overview</span><br>{{movie.overview}}</span><br><br>
+		<span><span class="label">Vote Count :</span>{{movie.vote_count}}</span><br>
+	</div>
+</div>
+<div class="footer">
+</div>
+</body>
+</html>

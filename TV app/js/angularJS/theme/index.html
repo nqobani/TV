@@ -1,0 +1,90 @@
+<!DOCTYPE type>
+
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="styles/homeStyle.css">
+	<link rel="stylesheet" type="text/css" href="styles/weather.css">
+	<link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/weather.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jsCode.js"></script>
+</head>
+<body>
+<div class="mainContainer">
+	<div class="sliderDiv">
+		<div class="navDiv">
+			<!--<div class="logo"><img class="logoImg" src="images/tv.png"/></div>--><span class="menu">Home</span><span class="menu">search</span><span class="menu">movies and series</span><span class="menu">About</span>
+		</div>
+		<img id="img1" class="slideImgs" src="images\Central-Intelligence.jpg">
+		<img id="img2" class="slideImgs" src="images\Avengers-Age-of-Ultron-Movie-Full-HD-Movies-Wallpaper.jpg">
+		<img id="img3" class="slideImgs" src="images\Man-of-Steelhdwallpapersfreedesktopbackgroundsfree-wallpapershigh-quality-wallpapershd-wallpaperswidescreen-wallpapershdtv-wallpapers1080p-wallpapersstock-photos-Copy.jpg">
+		<img  id="img4" class="slideImgs" src="images\the_amazing_spider_man_hollywood_movie_wallpaper.jpg">
+	</div>
+	<div class="bestFeatures">
+		<div class="bestFeature">
+			<img class="bestFeatureImgs" src="images/johnny-english-reborn-poster_114009-1920x1200.jpg">
+		</div>
+		<div class="bestFeature">
+			<img class="bestFeatureImgs" src="images/avengers-2-age-of-ultron-it-s-going-to-be-bigger-better-and-with-a-lot-more-hawkeye-27a0fae2-4330-484c-9560-6fdb3afc2408-576x360.png">
+		</div>
+		<div class="bestFeature">
+			<img class="bestFeatureImgs" src="images/00a8b29649f2b64b858141c36ce11a6c_ft_xl.jpg">
+		</div>
+		<div class="bestFeature">
+			<img class="bestFeatureImgs" src="images/6676640bb6a3ecbb9ca6341f2fabae74.jpg">
+		</div>
+		<img id="showHideSearchControls" style="width:50px; height:50px; margin-top:10px; margin-right:10px; float:right;" src="images/active-search-2-xxl.png">
+		<div class="searchContainer">
+			<input id="search" class="seachControll" type="text" placeholder="Search Text">
+			<button id="btnSearch" class="seachControll">Search</button>
+			<div id="searchFilter" class="searchFilter"></div>
+		</div>
+	</div>
+	<div class="displaySearchResultsCover"><div class="displaySearchResults"></div></div>
+	<div class="mainContent">
+		<h1 class="welcommingText">Don't you miss your TV?!?</h1>
+		<!--The code that get here is generated with javaScrip-->
+
+		
+	</div>
+	<div class="footer">
+		<div class="footerContant">
+			<!--<img class="walkingMan" src="images/78377-This-Is-A-Man-briskly-Walking..gif">-->
+			<div class="footerDivs">
+				<div ng-app="weatherApp"  ng-controller="weatherCtr as wc">
+			<input class="textBox" type="text" placeholder="Enter your city" ng-model="wc.newCity">
+			<button class="btnAdd" ng-click="wc.addNewCity()"> Your City</button><br>
+	
+			<div class="weatherPanel">
+				<select class="citySelector" ng-model="wc.city" ng-change="wc.cityChange()">
+					<option ng-repeat="city in wc.cities" value="{{city}}">{{city}}</option>
+				</select><br>
+				<span class="countryNameSpan" ng-model="wc.countryName">{{wc.countryName}}</span><br>
+				<span class="cityNameSpan" ng-model="wc.cityName">{{wc.cityName}}</span><br>
+				<img class="flag" ng-model="wc.flag" src="http://www.geognos.com/api/en/countries/flag/{{wc.flag}}.png"/>
+				<table class="weatherDetailsTable">
+					<caption><img ng-model="wc.icon" src="http://openweathermap.org/img/w/{{wc.icon}}.png"/></caption>
+					<tr><td colspan="2" ng-model="wc.weatherDesciption">{{wc.weatherDesciption}}</td></tr>
+					<tr><td ng-model="wc.cloouds">Clouds</td><td>{{wc.clouds}}</td></tr>
+					<tr><td ng-model="wc.deg">Degree</td><td>{{wc.deg}}&deg;</td></tr>
+					<tr><td ng-model="wc.humidity">Humidity</td><td>{{wc.humidity}}</td></tr>
+					<tr><td ng-model="wc.pressure">Pressure</td><td>{{wc.pressure}}</td></tr>
+					<tr><td ng-model="wc.speed">Speed</td><td>{{wc.speed}}</td></tr>
+				</table>
+			</div>
+		</div>
+			</div>
+			<div class="footerDivs"></div>
+			<div class="footerDivs"></div>
+			<div class="footerDivs"></div>
+			<div class="footerDivs"></div>
+
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

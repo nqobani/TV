@@ -1,0 +1,315 @@
+body
+{
+	padding: 0px;
+	margin: 0px;
+	color: #fff;
+	background-image: url("images/Appaloosa_Wallpaper_Smoking_Gun.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainContainer
+{
+	width: 100%;
+	height: auto;
+	background-color: rgba(79,100,150,0.7);
+	margin: 0px;
+}
+.logo
+{
+	width: 100px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+.logoImg
+{
+	width: 100px;
+	height: 100%;
+}
+.sliderDiv
+{
+	width: 100%;
+	height: 700px;
+	background-color: #125;
+	background-image: url('images/Therevenantphoto1.jpg');
+}
+.navDiv
+{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(79,100,150,0.7);
+	z-index: 99999;
+	position: fixed;
+	text-align: right;
+}
+.menu
+{
+	padding-left: 20px;
+	padding-right:20px;
+	font-size: 30px;
+	margin-right:1%;
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	font-family: Imprint MT Shadow;
+	background: rgba(79,150,250,0.6);
+	display: none;
+
+}
+.slideImgs
+{
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.bestFeatures
+{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	background: rgba(4,5,7,0.5);
+}
+.bestFeature
+{
+	width: 20%;
+	height: 90%;
+	margin-top: 10px;
+	margin-left:3%;
+	border-radius: 100px;
+	float: left;
+	background-color: rgba(44,79,82,0.5);
+	box-shadow: 0px 0px 15px 10px rgba(44,44,44,0.5);
+	transform: rotateZ(0deg);
+
+	-webkit-transition:transform 1000ms;
+	-o-transition:transform 1000ms;
+	transition:transform 1000ms;
+}
+.bestFeature:hover
+{
+	transform: rotateZ(20deg);
+	-o-transition:transform 1000ms;
+	-webkit-transition:transform 1000ms;
+	transition:transform 1000ms;
+}
+.bestFeatureImgs
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+}
+.mainContent
+{
+	width: 97.5%;
+	min-height: 600px;
+	height:auto;
+	padding: 20px;
+	background: rgba(4,50,7,0.2);
+	text-align: center;
+	vertical-align: top;
+}
+.onscroll:nth-child(even)
+{
+ margin-top: 300px;
+}
+.onscroll:nth-child(odd)
+{
+ margin-top: 300px;
+}
+.moviesAndShows
+{
+	width: 300px;
+	height: auto;
+	background-color: rgba(44,44,44,0.5);
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 0px;
+	z-index: 1;
+	vertical-align: top;
+	box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.5);
+}
+
+.searchContainer
+{
+	float: right;
+	margin-left: 69%;
+	margin-top: 20px;
+	display: none;
+	z-index: 12;
+	position: absolute;
+}
+.moviesAndShowsSearch
+{
+	width: 19%;
+	height: auto;
+	box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.5);
+	background-color: rgba(44,44,44,0.5);
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 0px;
+	z-index: 1;
+	vertical-align: top;
+}
+.moviesAndShowsImgs
+{
+	width: 100%;
+	min-height: 250px;
+	max-height: 300px;
+
+	background-color: rgba(44,44,44,0.5);;
+}
+.datepicker
+{
+
+}
+.welcommingText
+{
+	-webkit-text-shadow: 0px 0px 15px 20px rgba(0,10,0,0.5);
+	text-shadow: 0px 0px 15px 20px rgba(0,10,0,0.5);
+	color: #fff;
+}
+.imgs
+{
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+.displaySearchResults
+{
+	width: 100%;
+	padding: 10px;
+	display: none;
+	text-align: center;
+	background-color: rgba(50,79,150,0.3);
+
+}
+.displaySearchResultsCover
+{
+	width: 100%;
+	background-image: url("images/34.jpg");
+    min-height: 20px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.searchFilter
+{
+	width: 300px;
+	position: absolute;
+	z-index: 64487;
+	height: auto;
+	text-align: center;
+	max-height: 600px;
+	overflow: auto;
+}
+#search
+{
+	width: 300px;
+	height: 40px;
+	 border-bottom-right-radius: 100px;
+	 border-top-left-radius: 100px;
+	 font-size: 30px;
+	 font-style: italic;
+	 text-align: center;
+	 color: #fff;
+	 background:  rgba(50,50,70,0.5);
+}
+#btnSearch
+{
+	width: 120px;
+	height: 40px;
+	 border-bottom-right-radius: 100px;
+	 border-top-left-radius: 100px;
+	 font-size: 30px;
+	 font-style: italic;
+	 color: #fff;
+	 background:  rgba(4,50,70,0.5);
+}
+.datepicker
+{
+	border-top-left-radius:100px;
+	border-bottom-right-radius: 100px;
+	background:   rgba(20,50,70,0.5);
+	text-align: center;
+	color: #fff;
+	display: none;
+	width: 20px;
+}
+.searchResult:nth-child(even)
+{
+	background-color: #fbfbfb;
+	height: auto;
+
+}
+.searchResult:nth-child(odd)
+{
+	background-color: #f0f0f0;
+	height: auto;
+}
+.footer
+{
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	background-image: url("images/The_Seventh_Son_Upcoming_Hollywood_Movie_Ben_Barnes_Photo.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.innerSpan
+{
+
+}
+.outerSpan
+{
+	width: auto;
+	height: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	background:   rgba(20,50,70,0.5);
+	color: #fff;
+	border: 1px solid rgba(200,200,200,0.5);
+
+}
+.walkingMan
+{
+	z-index: -3;
+	position: inherit;
+	display: none;
+}
+.showDatepicker
+{
+	box-shadow: 0px 0px 15px 2px rgba(200,200,200,0.5);
+}
+.showDatepicker:hover
+{
+	box-shadow: 0px 0px 15px 2px rgba(200,0,200,0.5);
+}
+.footerContant
+{
+	text-align: center;
+	width: 100%;
+	min-height: 500px;
+	background-color: rgba(50,79,90,0.8);
+}
+
+.footerDivs
+{
+	width: 300px;
+	min-height: 400px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: rgba(50,150,120,0.3);
+	margin-right: 5px;
+	margin-top: 20px;
+	text-align: center;
+	box-shadow: 0px 0px 15px 10px rgba(44,44,44,0.5);
+}
